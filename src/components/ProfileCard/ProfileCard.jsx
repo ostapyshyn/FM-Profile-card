@@ -10,15 +10,30 @@ function ProfileCard() {
   return (
     <main className={styles.container}>
       <div className={styles.card}>
-        {/* <img src={background} alt="background" /> */}
         <CardBackground />
-        <img src={victor} alt="qr" />
-        <h1>Victor Crest 26</h1>
+        <div className={styles.image}>
+          <img src={victor} alt="qr" />
+        </div>
+
+        <h1>
+          Victor Crest <span>26</span>
+        </h1>
         <h2>London</h2>
         <hr />
-        <p>803K Likes</p>
-        <p>Followers 803K</p>
-        <p>1.4K Photos</p>
+        <div className={styles.info}>
+          <div>
+            <p className={styles.number}>80K</p>
+            <p className={styles.category}>Followers</p>
+          </div>
+          <div>
+            <p className={styles.number}>803K</p>
+            <p className={styles.category}>Likes</p>
+          </div>
+          <div>
+            <p className={styles.number}>1.4K</p>
+            <p className={styles.category}>Photos</p>
+          </div>
+        </div>
       </div>
     </main>
   );

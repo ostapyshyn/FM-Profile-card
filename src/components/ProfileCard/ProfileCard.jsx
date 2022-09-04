@@ -2,7 +2,7 @@ import React from 'react';
 
 import victor from '../../assets/img/image-victor.jpg';
 import { CardBackground } from '../../assets/svg/svg-icons';
-// import background from '../../assets/svg/background.svg';
+import { BottomBackground } from '../../assets/svg/svg-icons';
 
 import styles from './ProfileCard.module.scss';
 

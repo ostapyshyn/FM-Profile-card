@@ -2,14 +2,13 @@ import React from 'react';
 
 import victor from '../../assets/img/image-victor.jpg';
 import { CardBackground } from '../../assets/svg/svg-icons';
-import { BottomBackground } from '../../assets/svg/svg-icons';
 
 import styles from './ProfileCard.module.scss';
 
 function ProfileCard() {
   return (
     <main className={styles.container}>
-      <div className={styles.card}>
+      <section className={styles.card}>
         <CardBackground />
         <div className={styles.image}>
           <img src={victor} alt="qr" />
@@ -34,7 +33,7 @@ function ProfileCard() {
             <p className={styles.category}>Photos</p>
           </div>
         </div>
-      </div>
+      </section>
     </main>
   );
 }
